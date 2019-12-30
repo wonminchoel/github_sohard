@@ -1,24 +1,22 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-void main() => runApp(MyApp());
+void main() { runApp(MyApp());}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Demo123',
       theme: ThemeData(
-        // This is the theme of your application.123123132
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.lightGreen,
+        brightness: Brightness.dark,
+        accentColor:  Colors.deepOrangeAccent[400],
+        primarySwatch: Colors.cyan,//음영차이를 자동으로 지정
+        primaryColor: Colors.cyan[100],//음영을 고정하여 지정
+
+        //fontFamily: 'Georgia',
       ),
       home: MyHomePage(title: 'Flutter Demo Home Pageiinniinn'),
 
@@ -49,8 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 1;
 
   void _incrementCounter() {
-    _counter++;
-    /*
+
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
@@ -59,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _counter++;
     });
-*/
+
 
   }
 
