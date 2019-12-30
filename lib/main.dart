@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo123',
       theme: ThemeData(
         brightness: Brightness.dark,
-        accentColor:  Colors.deepOrangeAccent[400],
+        accentColor:  Colors.deepOrangeAccent[200],
         primarySwatch: Colors.cyan,//음영차이를 자동으로 지정
         primaryColor: Colors.cyan[100],//음영을 고정하여 지정
 
